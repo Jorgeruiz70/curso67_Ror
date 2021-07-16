@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 989px;
+    height: 1100px;
+    padding: 10px;
+    text-align: left;
+    margin-left: 265px;
+}
+
+.titulo1 {
+    display: inline-block;
+}
+
+.titulo2 {
+    display: inline-block;
+    margin-left: 449px;
+    margin-bottom: 16px;
+}
+
+#main {
+    background-image: linear-gradient(to bottom right, #5f4a54, #6f5964);
+    margin-bottom: 16px;
+    min-height: 950px;
+    vertical-align: top;
+}
+
+.imagen1 {
+    width: 414px;
+    height: 250px;
+    border: 7px solid #c0c0c0;
+    margin-left: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#about {
+    width: 485px;
+    min-height: 264px;
+    background-color: #ece5ec;
+    margin-left: 36px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about {
+    background-color: gray;
+    color: honeydew;
+    height: 26px;
+    padding: 5px;
+}
+
+.parrafo1 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.parrafo2 {
+    text-align: left;
+    margin-left: 5px;
+}
+
+p {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#la_mode {
+    width: 300px;
+    min-height: 632px;
+    background-color: #ece5ec;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lamode {
+    background-color: gray;
+    color: honeydew;
+    height: 30px;
+    padding: 5px;
+}
+
+.imagenlamode {
+    width: 300px;
+    height: 141px;
+}
+
+.technologies1 {
+    background-color: gray;
+    color: honeydew;
+    height: 26px;
+    padding: 7px;
+    margin-top: 117px;
+}
+
+.technologies2 {
+    background-color: gray;
+    color: honeydew;
+    height: 26px;
+    padding: 7px;
+    margin-top: 80px;
+}
+
+.technologies3 {
+    background-color: gray;
+    color: honeydew;
+    height: 26px;
+    padding: 7px;
+    margin-top: 44px;
+}
+
+.logostechnologies {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.boton1 {
+    background-color: green;
+    border: none;
+    color: white;
+    width: 86px;
+    height: 32px;
+    text-align: center;
+    padding: 3px 9px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 106px;
+    margin-top: 6px;
+}
+
+.boton2 {
+    background-color: green;
+    border: none;
+    color: white;
+    width: 132px;
+    height: 32px;
+    text-align: center;
+    padding: 3px 9px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 95px;
+    margin-top: 6px;
+}
+
+.email {
+    text-align: center;
+}
+
+.github {
+    width: 20px;
+    height: 20px;
+}
+
+.redsocial {
+    color: black;
+    margin-bottom: 1px;
+}
+
+#redsocialjay {
+    text-align: center;
+}

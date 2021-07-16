@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px dotted red;
+}
+
+@media only screen and (max-width: 480px) {
+    #container {
+        width: 90%;
+        background-color: white;
+        margin: 0px auto;
+        padding: 15px;
+    }
+    #header {
+        min-height: 150px;
+        width: 100%;
+        background-color: green;
+    }
+    #navigation {
+        min-height: 300px;
+        width: 25%;
+        background-color: blue;
+        display: none;
+    }
+    #main_content {
+        height: 500px;
+        width: 100%;
+        background-color: red;
+        display: block;
+        margin-top: 10px;
+        padding: 1px;
+    }
+    .subcontents {
+        min-height: 100px;
+        width: 90%;
+        background-color: yellow;
+        display: block;
+        margin: 20px;
+    }
+    #advertisement {
+        min-height: 100px;
+        width: 90%;
+        background-color: purple;
+        display: block;
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #container {
+        width: 90%;
+        background-color: white;
+        margin: 0px auto;
+        padding: 15px;
+    }
+    #header {
+        min-height: 150px;
+        width: 100%;
+        background-color: green;
+    }
+    #navigation {
+        min-height: 300px;
+        width: 25%;
+        background-color: blue;
+        display: none;
+    }
+    #main_content {
+        min-height: 500px;
+        width: 100%;
+        background-color: red;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+        padding: 1px;
+    }
+    .subcontents {
+        min-height: 200px;
+        width: 42%;
+        background-color: yellow;
+        margin: 15px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #advertisement {
+        min-height: 100px;
+        width: 96%;
+        background-color: purple;
+        margin: 15px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #container {
+        width: 90%;
+        background-color: white;
+        margin: 0px auto;
+        padding: 15px;
+    }
+    #header {
+        min-height: 150px;
+        width: 100%;
+        background-color: green;
+    }
+    #navigation {
+        min-height: 300px;
+        width: 25%;
+        background-color: blue;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+    }
+    #main_content {
+        min-height: 500px;
+        width: 72%;
+        background-color: red;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+        margin-left: 20px;
+        padding: 1px;
+    }
+    .subcontents {
+        min-height: 200px;
+        width: 29%;
+        background-color: yellow;
+        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #advertisement {
+        min-height: 120px;
+        width: 94%;
+        background-color: purple;
+        margin: 15px;
+    }
+}

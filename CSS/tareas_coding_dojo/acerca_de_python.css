@@ -1,0 +1,259 @@
+            * {
+                margin: 0px;
+                padding: 0px;
+                !!outline: 1px dotted red;
+            }
+            
+            #container {
+                width: 970px;
+                height: 709px;
+                background-color: #245076;
+                margin-left: 250px;
+            }
+            
+            .logopython {
+                width: 312px;
+                height: 100px;
+                margin-top: 20px;
+                margin-left: 25px;
+            }
+            
+            #search {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 330px;
+                margin-top: 10px;
+                padding: 5px;
+            }
+            
+            .textsise {
+                margin-right: 10px;
+                color: white;
+            }
+            
+            .normal {
+                color: #a2961b;
+                margin-right: 5px;
+            }
+            
+            .vertical {
+                color: black;
+                margin-right: 5px;
+            }
+            
+            .large {
+                color: #a2961b;
+            }
+            
+            p {
+                color: white;
+                margin-left: 68px;
+                margin-bottom: 5px;
+            }
+            
+            .search {
+                width: 154px;
+                height: 31px;
+                font-size: 10px;
+                color: gray;
+            }
+            
+            .go {
+                width: 37px;
+                height: 29px;
+                font-size: 12px;
+                color: #D5D8DC;
+                background-color: #245076;
+                border-radius: 5px;
+                border: 2px solid #D5D8DC;
+            }
+            
+            .search_go {
+                border: 10px solid #444444;
+                border-width: 10px 40px;
+                border-radius: 12px;
+                box-shadow: 2px 2px #2B2B2B;
+            }
+            
+            ul.a {
+                list-style-type: none;
+            }
+            
+            li a {
+                display: block;
+                color: white;
+                padding: 5px 27px;
+                text-decoration: none;
+                text-align: center;
+            }
+            
+            li.barra {
+                float: left;
+            }
+            
+            #barra_de_navegacion {
+                width: 857px;
+                margin-left: 62px;
+                border-radius: 10px;
+                background-color: #417bad;
+                position: relative;
+                box-shadow: 2px 2px #2b2b2b;
+                font-size: 21px;
+                height: 41px;
+            }
+            
+            ul.b {
+                list-style-type: none;
+                float: center;
+                width: 200px;
+                margin-left: 100px;
+                margin-top: 20px;
+                vertical-align: top;
+                font-size: 15px;
+            }
+            
+            .contenidob {
+                text-decoration-line: underline;
+            }
+            
+            #contenido {
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            #contenido2 {
+                display: inline-block;
+                vertical-align: top;
+                width: 650px;
+                text-align: center;
+                font-size: 13px;
+            }
+            
+            .contenidoc {
+                margin-left: 25px;
+                margin-right: 83px;
+                margin-top: 15px;
+                font-size: 15px
+            }
+            
+            #seislistas {
+                margin-top: 30px;
+                font-size: 17px;
+            }
+            
+            .c {
+                color: #ffd343;
+                font-size: 18px;
+                margin-right: 150px;
+                margin-bottom: 7px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            
+            .python {
+                color: white;
+                font-size: 18px;
+                margin-right: 150px;
+            }
+            
+            #contenido3 {
+                background-color: #ffffff;
+                height: 195px;
+                width: 970px;
+                text-align: center;
+            }
+            
+            .primarygettingstarted {
+                width: 400px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 10px;
+            }
+            
+            hr {
+                height: 5px;
+                background-color: #73a7d5;
+                width: 415px;
+                margin-left: 10px;
+                margin-right: 40px;
+            }
+            
+            .parrafocontenido3 {
+                color: black;
+                font-size: 14px;
+                margin-left: 48px;
+                margin-right: 40px;
+                width: 319px;
+            }
+            
+            span {
+                color: lightskyblue;
+            }
+            
+            ul.c {
+                color: black;
+                list-style-position: inside;
+                list-style-type: square;
+                text-align: center;
+                font-size: 14px;
+                margin-left: 50px;
+                width: 300px;
+            }
+            
+            .primaryapplications {
+                width: 460px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 10px;
+            }
+            
+            hr {
+                height: 5px;
+                background-color: #73a7d5;
+                width: 325px;
+                margin-left: 56px;
+            }
+            
+            .segundoparrafocontenido3 {
+                color: black;
+                font-size: 14px;
+                margin-left: 118px;
+                margin-right: 40px;
+                width: 250px;
+            }
+            
+            span {
+                color: lightskyblue;
+            }
+            
+            ul.d {
+                color: black;
+                list-style-position: inside;
+                list-style-type: square;
+                text-align: center;
+                font-size: 14px;
+            }
+            
+            #footer {
+                width: 970px;
+                height: 51px;
+            }
+            
+            li.listafooter {
+                display: block;
+                color: #7aadda;
+                padding: 5px 27px;
+                text-decoration: none;
+                text-align: center;
+                float: left;
+                margin-top: 23px;
+                margin-left: 200px;
+                margin-right: -180px;
+            }
+            
+            .copy {
+                font-size: 10px;
+                color: #7aadda;
+                display: block;
+                margin-left: 452px;
+                margin-top: 5px;
+            }

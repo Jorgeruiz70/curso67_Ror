@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos 3</title>
+</head>
+
+<body>
+
+    <script>
+        /*Ejercicio 1*/
+
+        function a(x, y) { //x=5; y=5;
+            return 5;
+        }
+        console.log(a(5, 5));
+        //console.log(5);
+        //respuesta: 5
+
+        /*Ejercicio 2*/
+
+        function a(x, y) { //x=6 ; y=8;
+            z = [6, 8, 5] // arreglo vacio; z.length = 0
+            z.push(x); //x=6
+            z.push(y); //=8
+            z.push(5);
+            console.log(z); //z= [6,8,5]
+            return z;
+        }
+        b = a(2, 2)
+        console.log(b);
+        console.log(a(6, 8));
+        //respuesta: [2,2,5], [2,2,5], [6,8,5]
+
+        /*Ejercicio 3*/
+
+        function a(x) { //x=2;
+            z = [2, 2]; // arreglo vacio
+            z.push(x);
+            z.pop(); //elimina el ultimo elemento del arrelgo//array
+            z.push(x);
+            z.push(x);
+            return z;
+        }
+        y = a(2); //y= [2,2]
+        y.push(5); //y= [2,2,5]
+        console.log(y);
+        //Respuesta: [2,2,5]
+
+        /*Ejercicio 4*/
+        function a(x) { //=[2,3,4,5]
+            if (x[0] < x[1]) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        b = a([2, 3, 4, 5]) //b= true;
+        console.log(b);
+        //Respuesta: true
+
+        /*Ejercicio 5*/
+
+        function a(x) { // [1,2,3,4] ; x.length = 4;
+            for (var i = 0; i < x.length; i++) { //i=4
+                if (x[i] > 0) {
+                    x[i] = “Coding”; // i fue sobrescribido con la palabra coding
+                }    
+            }    
+            return x; //["coding","coding","coding","coding"]
+        }
+        console.log(a([1, 2, 3, 4]))
+            //Respuesta: ["coding","coding","coding","coding"]
+
+        /*Ejercicio 6*/
+        function a(x) { //[5,7,-1,4]; // x.length = 4;
+            for (var i = 0; i < x.length; i++) { //i=4
+                if (x[i] > 5) {
+                    x[i] = "Coding";
+                } else if (x[i] < 0) {
+                    x[i] = "Dojo";
+                }    
+            }    
+            return x; //[5,"Coding","Dojo",4]
+        }
+        console.log(a([5, 7, -1, 4])) // console.log([5,"Coding","Dojo",4])
+            //Respuesta: [5,"Coding","Dojo",4]
+
+        /*Ejercicio 7*/
+        function a(x) { //[5,10]
+            if (x[0] > x[1]) {
+                return x[1];
+            }
+            return 10;
+        }
+        b = a([5, 10]) //b= a(10);
+        console.log(b); //console.log(10)
+        //Respuesta: 10
+
+        /*Ejercicio 8*/
+        function sum(x) {
+            sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+                console.log(sum);
+            }
+            return sum;
+        }
+        //Respuesta: La función no fue llamada por tanto no hace nada
+
+        /*Ejercicio 9*/
+        /*1) Analiza los valores de un array y 
+        obtén el promedio (average) de esos valores.*/
+
+        function printAverage(x) { //x= [1,2,3]; x.length=3
+            sum = 0; //6
+            for (let i = 0; i < x.length; i++) { //i=3
+                sum = sum + x[i];
+                //  sum = 3   + x[2];
+                //  sum = 3   +  3
+                //  sum = 6;
+            }
+            /*var promedio = sum / x.length;
+            return promedio;*/
+            return sum / x.length;
+        }
+        y = printAverage([1, 2, 3]);
+        console.log(y); // should log 2
+
+        y = printAverage([2, 5, 8]);
+        console.log(y); // should log 5
+        //Respuesta: 2 ; 5
+
+        /*Ejercicio 10*/
+        /*Crea un array con todos los enteros impares (odd integers) entre 1 y 255 (inclusive)*/
+
+        function returnOddArray() {
+            let array = [];
+            for (let i = 1; i <= 255; i = +2) {
+                array.push(i);
+            }
+            return array;
+        }
+        y = returnOddArray();
+        console.log(y); // should log [1,3,5,...,253,255]
+
+        /*Ejercicio 11*/
+        /*Eleva al cuadrado a cada elemento del array y sobre escribelo. Retorna el Array*/
+
+        function squareValue(x) { //x=[1,2,3]
+            for (let i = 0; i < x.length; i++) {
+                x[i] = x[i] * x[i];
+            }
+            return x;
+        }
+        y = squareValue([1, 2, 3]);
+        console.log(y); // should log [1,4,9]
+
+        y = squareValue([2, 5, 8]);
+        console.log(y); // should log [4,25,64]
+    </script>
+
+</body>
+
+</html>
