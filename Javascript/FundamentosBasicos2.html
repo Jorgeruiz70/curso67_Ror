@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Básicos 2 | JavaScript</title>
+</head>
+
+<body>
+    <script>
+        /*Ejercicio 1*/
+
+        function ReemplazarPosit(array) {
+            var NuevoArray = [];
+
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] > 0) {
+                    NuevoArray.push("Big");
+                } else(NuevoArray.push(array[i]));
+            }
+            return NuevoArray;
+        }
+        y = ReemplazarPosit([10, 5, -3, 4, -15, -1]);
+        console.log(y)
+
+        /*Ejercicio 2*/
+
+        function MenoryMayor(array) {
+            var menor = array[0];
+            var mayor = array[0];
+
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] < menor) {
+                    menor = array[i];
+                }
+                if (array[i] > mayor) {
+                    mayor = array[i];
+                }
+            }
+            console.log(menor);
+            return mayor;
+        }
+        y = MenoryMayor([1, 2, 3, 4, 5]);
+
+        /*Ejercicio 3*/
+
+        /*Ejercicio 4*/
+
+        function doble(array) {
+            var NuevoArray = [];
+            var ValorDoble = 0;
+
+            for (var i = 0; i < array.length; i++) {
+                ValorDoble = array[i] * 2;
+                NuevoArray.push(ValorDoble);
+            }
+            return NuevoArray;
+        }
+        doble([1, 2, 5, 30, 60]);
+
+        /*Ejercicio 5*/
+
+        function ContarPositivos(array) {
+            var contador = 0;
+
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] > 0) {
+                    contador = contador + 1;
+                }
+            }
+            array[array.length - 1] = contador;
+            return array;
+        }
+        y = ContarPositivos([-1, 1, 1, 1]);
+        console.log(y)
+
+        /*Ejercicio 7*/ //todavía no la resuelvo :()
+
+
+
+        /*Ejercicio 8*/
+
+        function longitud(y) {
+            var contador = "";
+
+            for (var i = (y.length); i > 0; i--) {
+                contador = y[i - 1];
+                y[i] = contador.length;
+            }
+            return y;
+        }
+        x = longitud(["aprendiendo", "a", "programar"]);
+        console.log(x)
+
+        /*Ejercicio 9 */
+
+        function ArrayOriginal(y) {
+            var MasSiete = [];
+
+            for (var i = 0; i < y.length; i++) {
+                MasSiete.push(y[i] + 7)
+            }
+            return MasSiete;
+        }
+        ArrayOriginal([1, 2, 3])
+
+        /*Ejercicio 10*/
+
+        /*Ejercicio 11*/
+
+        function Negativa(y) {
+
+            for (var i = 0; i < y.length; i++) {
+                if (y[i] > 0) {
+                    y[i] = y[i] - (y[i] * 2);
+                }
+            }
+            return y;
+        }
+        x = Negativa([1, -3, 5]);
+        console.log(x)
+
+        /*Ejercicio 12*/
+
+        function Hambriento(y) {
+            var comida = 0;
+            for (var i = 0; i < y.length; i++) {
+                if (y[i] == "comida") {
+                    console.log("yumi");
+                    comida++;
+                }
+                if (comida == 0) {
+                    console.log("Tengo hambre");
+                }
+            }
+        }
+        Hambriento(["hola", "mundo"]);
+        Hambriento(["comida", "hola", "mundo"])
+    </script>
+</body>
+
+</html>
