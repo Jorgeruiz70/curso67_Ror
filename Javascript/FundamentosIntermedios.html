@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Intermedios | Javascript </title>
+</head>
+
+<body>
+    <script>
+        /*Ejercicio 1*/
+
+        function sigma(num) {
+            var sum = 0;
+
+            for (var i = 1; i <= num; i++) {
+                sum = sum + i;
+            }
+            return sum;
+        }
+
+        y = sigma(3);
+        console.log(y)
+
+        /*Ejercicio 2*/
+
+        function factorial(num) {
+            var mult = 1;
+
+            for (var i = 1; i <= num; i++) {
+                mult = mult * i;
+            }
+            return mult;
+        }
+        y = factorial(5);
+        console.log(y)
+
+        /*Ejercicio 3*/
+
+        function fibonacci(x) {
+            var fibu1 = 0;
+            var fibu2 = 1;
+            var aux = 0;
+            if (x == 0) {
+                return 0;
+            }
+            if (x == 1) {
+                return 1;
+            }
+            for (var i = 2; i <= x; i++) {
+                aux = fibu1 + fibu2;
+                fibu1 = fibu2;
+                fibu2 = aux;
+            }
+            return aux;
+        }
+        y = fibonacci(6);
+        console.log(y)
+
+        /*Ejercicio 4*/
+
+        function penultimo(x) {
+            if (x.length < 2) {
+                return null;
+            }
+            return x[x.length - 2];
+        }
+        y = penultimo(["arigato", "cruel", 10, 5, "kari", "garfield"]);
+        console.log(y);
+
+        /*Ejercicio 5*/
+
+        /*Ejercicio 6*/
+
+        function segundon(x) {
+            var aux = 0;
+            var max = 0;
+            if (x.length < 2) {
+                return null;
+            }
+            for (var i = 0; i < x.length; i++) {
+                max = i;
+                for (var j = i + 1; j < x.length; j++) {
+                    if (x[j] > x[max]) {
+                        max = j;
+                    }
+                }
+                aux = x[max];
+                x[max] = x[i];
+                x[i] = aux;
+            }
+            return x[1];
+        }
+        z = segundon([1, 20, 175, 45, 100]);
+        console.log(z);
+
+        /*Ejercicio 7*/
+
+        function doble(x) {
+            var NuevoArray = [];
+
+            for (var i = 0; i < x.length; i++) {
+                NuevoArray.push(x[i]);
+                NuevoArray.push(x[i]);
+            }
+            return NuevoArray;
+        }
+        y = doble([4, "Ulysses", 42, "false"]);
+        console.log(y)
+    </script>
+</body>
+
+</html>
